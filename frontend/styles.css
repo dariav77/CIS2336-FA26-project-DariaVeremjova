@@ -103,6 +103,13 @@ header h1 {
     box-sizing: border-box;
 }
 
+#welcome figure iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
 #welcome figure video {
     max-height: 340px;
     object-fit: cover;
