@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="../frontend/images/uhlogo.png" alt="UH Logo">
+        <h1>UH Sugar Land Student Center</h1>
+    </header>
+    <div class="topnav">
+       <a href="index.html">Home</a> 
+       <a href="FAQ.html">FAQ</a>
+       <a class="active" href="roomBooking.html">Room Booking</a>
+       <a href="reference.html">Reference</a>
+    </div>
+    <h2>Room Booking</h2>
+    <form action="submit_form.php" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> 
+
+        <label for="email">UH Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="roomType">Room:</label>
+        <select>
+            <option>Small Study (1-4 persons)</option>
+            <option>Big Study (5-10 people)</option>
+            <option>Meeting Room 101 (10-14 people)</option>
+            <option>Meeting Room 102 (15-12 people)</option>
+            <option>Event Room (25-40 people)</option>
+        </select> 
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required> 
+
+        <label for="startTime">Start Time:</label>
+        <input type="time" id="startTime" name="startTime" required> 
+            
+        <label for="endTime">End Time:</label>
+        <input type="time" id="endTime" name="endTime" required> 
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+    <footer>
+        <p>Developer Contact Information:</p>
+        <p>Daria Veremjova</p>
+        <p><a href="mailto:dveremjo@CouagrNet.uh.edu">dveremjo@CouagrNet.uh.edu</a></p> 
+        <p>&copy; UH Sugar Land Student Center. All rights reserved.</p>
+    </footer>
+</body>
